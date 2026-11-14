@@ -1,0 +1,72 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Check setup",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/check_setup.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "LLM_PROVIDER": "${input:provider}"
+      }
+    },
+    {
+      "name": "Pattern 1: Single agent",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/pattern1_single_agent.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "LLM_PROVIDER": "${input:provider}"
+      }
+    },
+    {
+      "name": "Pattern 2: Supervisor",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/pattern2_supervisor.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "LLM_PROVIDER": "${input:provider}"
+      }
+    },
+    {
+      "name": "Pattern 3: Peer-to-peer",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/pattern3_peertopeer.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "LLM_PROVIDER": "${input:provider}"
+      }
+    },
+    {
+      "name": "Current file",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "LLM_PROVIDER": "${input:provider}"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "provider",
+      "type": "pickString",
+      "description": "LLM provider for this run",
+      "options": [
+        "anthropic",
+        "openrouter"
+      ],
+      "default": "anthropic"
+    }
+  ]
+}
