@@ -2,48 +2,52 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Check setup",
+      "name": "Lab 1: Check setup",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/check_setup.py",
+      "program": "${workspaceFolder}/lab1/check_setup.py",
       "console": "integratedTerminal",
       "envFile": "${workspaceFolder}/.env",
       "env": {
         "LLM_PROVIDER": "${input:provider}"
-      }
+      },
+      "cwd": "${workspaceFolder}/lab1"
     },
     {
-      "name": "Pattern 1: Single agent",
+      "name": "Lab 1: Pattern 1: Single agent",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/pattern1_single_agent.py",
+      "program": "${workspaceFolder}/lab1/pattern1_single_agent.py",
       "console": "integratedTerminal",
       "envFile": "${workspaceFolder}/.env",
       "env": {
         "LLM_PROVIDER": "${input:provider}"
-      }
+      },
+      "cwd": "${workspaceFolder}/lab1"
     },
     {
-      "name": "Pattern 2: Supervisor",
+      "name": "Lab 1: Pattern 2: Supervisor",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/pattern2_supervisor.py",
+      "program": "${workspaceFolder}/lab1/pattern2_supervisor.py",
       "console": "integratedTerminal",
       "envFile": "${workspaceFolder}/.env",
       "env": {
         "LLM_PROVIDER": "${input:provider}"
-      }
+      },
+      "cwd": "${workspaceFolder}/lab1"
     },
     {
-      "name": "Pattern 3: Peer-to-peer",
+      "name": "Lab 1: Pattern 3: Peer-to-peer",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/pattern3_peertopeer.py",
+      "program": "${workspaceFolder}/lab1/pattern3_peertopeer.py",
       "console": "integratedTerminal",
       "envFile": "${workspaceFolder}/.env",
       "env": {
         "LLM_PROVIDER": "${input:provider}"
-      }
+      },
+      "cwd": "${workspaceFolder}/lab1"
     },
     {
       "name": "Current file",
@@ -54,7 +58,8 @@
       "envFile": "${workspaceFolder}/.env",
       "env": {
         "LLM_PROVIDER": "${input:provider}"
-      }
+      },
+      "cwd": "${fileDirname}"
     }
   ],
   "inputs": [

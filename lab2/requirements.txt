@@ -1,0 +1,15 @@
+# From the notebook's setup cell
+openai
+langchain_huggingface
+sentence_transformers
+langchain_chroma
+chromadb
+langchain_text_splitters
+pypdf
+pandas
+# Run the notebook in VS Code / Jupyter
+ipykernel
+python-dotenv
+# Asked for in the tracks
+rank_bm25   # Track A
+docling     # Tracks B and C1

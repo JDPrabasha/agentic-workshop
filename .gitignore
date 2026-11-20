@@ -3,3 +3,7 @@
 __pycache__/
 *.docx
 .DS_Store
+# Lab 2 notebook downloads its corpus at run time
+lab2/state_of_the_union.txt
+lab2/foodbank_2020.pdf
+.ipynb_checkpoints/

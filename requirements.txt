@@ -1,2 +1,2 @@
-anthropic
-python-dotenv
+-r lab1/requirements.txt
+-r lab2/requirements.txt
